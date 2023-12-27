@@ -17,3 +17,9 @@
         @content;
     }
 }
+
+@mixin grid($columna) {
+    display: grid;
+    grid-template-columns: repeat($columna, 1fr);
+    gap: 5rem;
+}
